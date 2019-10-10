@@ -124,9 +124,9 @@ a {
 }
 
 .cloud-circle {
-	width: 500px;
-	height: 500px;
-	margin: 10px;
+	width: 30.333vw;
+	height:45vh;
+	margin: 1.5vw;
 	background-image: linear-gradient(pink, white);
 	border-radius: 50%;
 }
@@ -179,7 +179,7 @@ a {
 }
 
 .e-text {
-	font-size:100px;
+	font-size:20vw;
 	color: sienna;
 }
 
