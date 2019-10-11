@@ -85,7 +85,7 @@ a {
 
 .sidebar{
   width:100vw;
-  height:100vh;
+  height:80vh;
   display: flex;
   flex-wrap: wrap;
   background:black;
@@ -94,7 +94,7 @@ a {
 
 .stripe-1{
   background-color:red;
-  height:900px;
+  height:70vh;
   width:20px;
   margin-right:10px;
   float:left;
@@ -102,7 +102,7 @@ a {
 
 .stripe-2{
   background-color:olivedrab;  
-  height:850px;
+  height:65vh;
   width:30px;
   margin-right:20px;
   float:left;  
@@ -384,8 +384,12 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: lightgray;
 }
+
+.gray {
+	background-color: gray;
+}
+
 .barcode {
 	width: 200vw;
 	margin: auto;
@@ -403,19 +407,45 @@ a {
 
 }
 
+.scan {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+.scan .barcode {
+	justify-content: flex-start;
+}
+
 .scanbox {
 	width: 200px;
 	height: 200px;
-	background-color: white;
+	background-color: gray;
+	border-right: 15px solid black;
 
 
 /*barcode animation effect*/
-	animation-name: growUG;
+	animation-name: scaner;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
   	animation-direction: alternate;
 }
+
+@keyframes scaner {
+  
+  0% {
+    width:0px;
+  }
+  
+  100% {
+    width:100vw;
+  }
+  
+  
+}
+
 
 
 
