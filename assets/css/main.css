@@ -1,69 +1,85 @@
 body {
-	font-family: Helvetica,Arial,sans-serif;
-	font-size: 100px;
-	color:grey;
-	background-color:white;
+	font-family: Avenir;
+	font-size: 24px;
 }
 
 a {
 	color:red;
 }
 
-/* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
-
-/* EXAMPLE CODE PLEASE REMOVE */
-
-.title {
-	color:skyblue;
-	text-align:center;
-	text-transform:uppercase;
+.sidebar {
+	position: fixed;
+	width:25%;
+	top:0px;
+	left:0px;
+	height:100vh;
+	font-size: 3vw;
+	margin-top: 100px;
+	text-transform: uppercase;
 }
 
-.bio {
-	font-size:20px;
-}
-
-.bitmoji {
-	width:500px;
-	border:1px grey;
-	margin:auto;
-}
-
-.bitmoji img {
-	width: 100%;
-}
-
-.bitmoji2 {
-	width:500px;
-	border:1px grey;
-	margin:auto;
-}
-
-.bitmoji2 img {
-	width: 100%;
+.sidebar-content {
+	padding: 10px;
+	margin-left: 5px;
 }
 
 .main {
-	border: 2px solid black;
+	width:75%;
+	margin-left: 25%;
+	flex: 0 0 50%;
+	height: 880px;
+	margin-top: 80px;
+}
+
+.main-content {
+	padding: 20px; 
+}
+
+.main-text {
+	padding: 15px;
+}
+
+.listing {
+	font-size: 30px;
 	padding: 20px;
-	margin-top:100px;
-	margin-bottom:100px;
-	width:500px;
+	margin-bottom: 2vw;
+	text-transform: uppercase;
+
 }
 
-.block {
-	display: inline-block;
-	padding: 20px;
-	width:200px;
-	background-color:black;
-	color:#fff;
+.main .box {
+	justify-content: flex-start;
+	position: fixed;
+	top: 75px;
+	left: 420px;
+	z-index: -1;
 }
 
-.centerblock {
-	width:500px;
-	margin: auto;
+.box {
+	width: 200px;
+  	height:880px;
+  	background-color: pink;
+  /*   add your animation name and settings here */
+  	animation-name:growbox;
+  	animation-duration:5s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: alternate;
+
 }
 
-.centerblock img {
-	width: 100%;
+/*   add your starting state and your end state  */
+	@keyframes growbox {
+  
+  0% {
+    width:0px;
+  }
+  
+  100% {
+    width:75vw;
+  }
+  
+  
 }
+
+
