@@ -1,42 +1,52 @@
 body {
-	font-family: Helvetica,Arial,sans-serif;
-	font-size: 32px;
+	font-family: Avenir;
+	font-size: 24px;
 	background-color: black;
 	color: white;
 }
 
 a {
-	color:red;
+	color:yellow;
 }
 
 
 /*Index Homepage*/
 
 .index-intro {
-	font-size: 18px;
-	margin-bottom: 25vh;
+	font-size: 60px;
+	font-weight: bolder;
+	color: cyan;
+	padding: 8vh;
+	margin-bottom: 10vh;
+	margin-left: 5vw;
+	line-height: 1.2em;
 }
 
 .index-row {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 10px;
+	padding: 40px;
 	margin-bottom: 5px;
 	margin-top: 5px;
-	border-top: 2px solid white; 
+	border-top: 0.5px solid blue; 
 
 }
 
 .index-name {
 	flex: 0 0 50%;
+	font-weight: bold;
+	font-size: 30px;
+
 }
 
 .index-layer {
 	flex: 0 0 25%;
+	line-height: 1.3em;
 }
 
 .index-tag {
 	flex: 0 0 25%;
+	line-height: 1.3em;
 }
 
 /*IP Address*/
@@ -48,7 +58,6 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: futura;
 
 }
 
@@ -56,7 +65,6 @@ a {
 	font-size: 16vw;
 	text-align: center;
 	color: white;
-
 }
 
 
@@ -81,156 +89,38 @@ a {
 
 }
 
-/*barcode isbn*/
+/*Checkers Type*/
 
-.sidebar{
-  width:100vw;
-  height:80vh;
-  display: flex;
-  flex-wrap: wrap;
-  background:black;
-  justify-content: center;
+.checkers-2 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.checkers-2-blue {
+	width: 50vw;
+	height: 50vh;
+	background-color: blue;
+}
+.checkers-2-white {
+	width: 50vw;
+	height: 50vh;
+	background-color: white;
 }
 
-.stripe-1{
-  background-color:red;
-  height:80vh;
-  width:20px;
-  margin-right:10px;
-  float:left;
+.checkers-type {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+
 }
 
-.stripe-2{
-  background-color:olivedrab;  
-  height:75vh;
-  width:30px;
-  margin-right:20px;
-  float:left;  
-}
-.stripe-3{
-  background-color:yellow;  
-  height:75vh;
-  width:80px;
-  margin-right:20px;
-  float:left;  
-}
-
-.stripe-4{
-  background-color:blue;  
-  height:75vh;
-  width:30px;
-  margin-right:20px;
-  float:left;  
-}
-
-.stripe-5{
-  background-color:lime;  
-  height:75vh;
-  width:10px;
-  margin-right:40px;
-  float:left;  
-}
-
-.stripe-6{
-  background-color:orange;  
-  height:75vh;
-  width:50px;
-  margin-right:10px;
-  float:left;  
-}
-
-.stripe-7{
-  background-color:purple;  
-  height:75vh;
-  width:80px;
-  margin-right:40px;
-  float:left;  
-}
-
-.stripe-8{
-  background-color:gray;  
-  height:75vh;
-  width:20px;
-  margin-right:30px;
-  float:left;  
-}
-
-.stripe-9{
-  background-color:white;  
-  height:75vh;
-  width:50px;
-  margin-right:10px;
-  float:left;  
-}
-
-.stripe-10{
-  background-color:pink;  
-  height:80vh;
-  width:20px;
-  margin-right:35px;
-  float:left;  
-}
-
-.stripe-11{
-  background-color:turquoise;  
-  height:75vh;
-  width:60px;
-  margin-right:24px;
-  float:left;  
-}
-
-.stripe-12{
-  background-color:orangered;  
-  height:75vh;
-  width:45px;
-  margin-right: 28px;
-  float:left;  
-}
-
-.stripe-13{
-  background-color: indigo;  
-  height:80vh;
-  width:35px;
-  margin-right:13px;
-  float:left;  
-}
-
-.stripe-14{
-  background-color: deepskyblue;  
-  height:75vh;
-  width:60px;
-  margin-right:20px;
-  float:left;  
-}
-
-.stripe-15{
-  background-color:sienna;  
-  height:75vh;
-  width:30px;
-  margin-right:40px;
-  float:left;  
-}
-
-.stripe-16{
-  background-color:greenyellow;  
-  height:75vh;
-  width:50px;
-  margin-right:10px;
-  float:left;  
-}
-
-.stripe-17{
-  background-color:gold;  
-  height:80vh;
-  width:20px;
-  margin-right:20px;
-  float:left;  
-}
-
-.sidebar-text {
-  	font-size: 140px;
-  	text-align: center;
-
+.checkers-text {
+	font-size:20vw;
+	color: orange;
 }
 
 /*Cloud Pattern*/
@@ -251,88 +141,56 @@ a {
 	border-radius: 50%;
 }
 
-/*grid ip*/
+/*Chip*/
 
-.grid {
+.chip-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: darkseagreen;
+}
+
+.chip {
+	width: 40vh;
+	height: 40vh;
 	display: flex;
 	flex-wrap: wrap;
-	font-family: Futura;
-	font-size: 40px;
-}
-
-.grid-red{
-	width: 50%;
-	height: 50vh;
-	background-color: red;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.grid-blue {
-	width: 50%;
-	height: 50vh;
-	background-color: blue;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+.chip-text {
+	font-size: 5vw;
+	padding: 15px;
+	border: 1px solid white;
+	color: white;
 
-.grid-green {
-	width: 50%;
-	height: 50vh;
-	background-color: green;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
-
-.grid-orange {
-	width: 50%;
-	height: 50vh;
-	background-color: orange;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 
 /*flag letter-e*/
 
-.fingerprint {
-	width: 100%;
+.flag-letter-e {
+	width: 100vw;
 	height: 100vh;
-}
-
-.fingerprint img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-	background-color: #000;
-
-}
-
-.robot {
-	position: absolute;
-	top:0px;
-	left:0px;
 	display: flex;
-	width:100%;
-	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background-color: bisque;
+}
+
+.letter-e {
+	width: 40vh;
+	height: 40vh;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.robot-text {
-	font-family: Helvetica,Arial,sans-serif;
-	border-radius: 100px;
-  height:5vh;
-  width:80vw;
-  background-color:cyan;
-	color:gray;
-	box-shadow: 0px 0px 80px cyan;
-	padding: 28px;
-	text-align: center;
+.e-text {
+	font-size:20vw;
+	color: sienna;
 }
 
 /*checker pink*/
@@ -376,81 +234,22 @@ a {
 	background-color: palevioletred;
 }
 
-/*barcode*/
+/*Hello*/
 
-.mailbarcode {
-	width:100vw;
-	height:100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.hello {
+	background-color: steelblue;
+	height: 100vh;
+	width: 100vw;
+
 }
 
-.gray {
-	background-color: gray;
-}
-
-.barcode {
-	width: 200vw;
+.hello-text {
+	font-size: 150px;
+	text-align: center;
+	color: white;
+	width:60vw;
+	padding: 7px;
+	border: 2px solid white;
+	display: block;
 	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
 }
-
-.barcode img {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-}
-
-.scan {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	z-index: 1;
-}
-
-.scan .barcode {
-	justify-content: flex-start;
-}
-
-.scanbox {
-	width: 200px;
-	height: 200px;
-	background-color: gray;
-	border-right: 15px solid black;
-
-
-/*barcode animation effect*/
-	animation-name: scaner;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-  	animation-direction: alternate;
-}
-
-@keyframes scaner {
-  
-  0% {
-    width:0px;
-  }
-  
-  100% {
-    width:100vw;
-  }
-  
-  
-}
-
-
-
-
-
-
-
-
-
