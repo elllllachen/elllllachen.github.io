@@ -67,6 +67,38 @@ a {
 	color: white;
 }
 
+/*chat room*/
+
+.abc {
+	background-color: pink;
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	
+}
+
+.abc-text {
+	font-size: 50px;
+	color: white;
+	margin-left: 50px;
+
+	padding: 20px;
+	border: 2px solid white;
+}
+
+.cde-text {
+	font-size: 50px;
+	color: gray;
+	margin-left: 300px;
+	margin-top: 300px;
+	padding: 20px;
+	border: 2px solid gray;
+}
+
+
 /*email interface*/
 
 .email {
@@ -111,15 +143,15 @@ a {
 	color: blue;
 	font-weight: bold;
 	display: flex;
-	font-size: 60px;
+	font-size: 50px;
 	align-items: center;
 	justify-content: center;
 	flex: 0 0 100%;
 }
 
 .safari-text {
-	font-size: 30px;
-	padding-top: 20px;
+	font-size: 20px;
+	padding-top: 15px;
 	height: 5vh;
 	justify-content: center;
 	display: flex;
@@ -177,6 +209,8 @@ a {
   height:85vh;
   background:black;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .stripe-1{
@@ -184,7 +218,7 @@ a {
   height:99%;
   width:45px;
   margin-right:10px;
-  margin-left: 380px;
+  
 }
 
 .stripe-2{
@@ -300,6 +334,7 @@ a {
 .sidebar-text {
 	font-size: 120px;
 	text-align: center;
+	
 }
 
 /*Barcode scan*/
@@ -380,32 +415,36 @@ a {
  backface-visibility: visible;
 }
 
-/*Checkers*/
 
-.user {
-	width:100vw;
-	height:100vh;
+/*chip*/
+
+.chip-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: lightgray;
-  	font-family:arial;
+	height: 100vh;
+	width: 100vw;
 }
 
-.avatar {
-	width:25vw;
-	height:25vw;
-	background-color:purple;
+.chip {
+	width: 60vh;
+	height: 60vh;
+	padding: 5vh;
+	background-color: pink;
+	border: 1px solid gray;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 50%;
+
 }
 
-.letter {
-	color:white;
-	font-size:15vw;
+.chip .text {
+	color: gray;
+	font-size:20vh;
+	font-weight: normal;
+	text-align: center;
 }
+
 
 
 
